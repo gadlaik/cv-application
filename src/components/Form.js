@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Form.css";
 
 export default function Form(props) {
   function nextBtn(e) {
@@ -25,9 +26,40 @@ export default function Form(props) {
     }
   }
 
+  function collectInfo(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let school = document.getElementById("school-name").value;
+    let degree = document.getElementById("degree").value;
+    let gradDate = document.getElementById("grad-date").value;
+    let company = document.getElementById("company").value;
+    let title = document.getElementById("title").value;
+    let tasks = document.getElementById("tasks").value;
+    let period = document.getElementById("period").value;
+
+    props.submitCV({
+      name,
+      phone,
+      email,
+      school,
+      degree,
+      gradDate,
+      company,
+      title,
+      tasks,
+      period,
+    });
+
+    document.getElementById("cv-form").style.display = "none";
+    document.getElementById("overview").classList.remove("hide");
+  }
+
   return (
-    <form>
-      <ul id={"general-info"} className={"show"}>
+    <form id={"cv-form"}>
+      <ul id={"general-info"} className={"cv-form-list show"}>
         <h3>General Info</h3>
         <hr />
         <li>
@@ -50,7 +82,7 @@ export default function Form(props) {
         </div>
       </ul>
 
-      <ul id={"edu-info"}>
+      <ul id={"edu-info"} className={"cv-form-list"}>
         <h3>Education</h3>
         <hr />
         <li>
@@ -76,7 +108,7 @@ export default function Form(props) {
         </div>
       </ul>
 
-      <ul id={"exp-info"}>
+      <ul id={"exp-info"} className={"cv-form-list"}>
         <h3>Experience</h3>
         <hr />
         <li>
@@ -102,7 +134,7 @@ export default function Form(props) {
           <button id={"back"} onClick={backBtn}>
             BACK
           </button>
-          <button type="submit" id={"submit-form"}>
+          <button type="submit" id={"submit-form"} onClick={collectInfo}>
             Finish
           </button>
         </div>
