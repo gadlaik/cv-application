@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cv-application/static/css/main.18075b12.chunk.css",
+    "main.js": "/cv-application/static/js/main.fae39c01.chunk.js",
+    "main.js.map": "/cv-application/static/js/main.fae39c01.chunk.js.map",
+    "runtime-main.js": "/cv-application/static/js/runtime-main.41e43d0a.js",
+    "runtime-main.js.map": "/cv-application/static/js/runtime-main.41e43d0a.js.map",
+    "static/js/2.b6ce75c9.chunk.js": "/cv-application/static/js/2.b6ce75c9.chunk.js",
+    "static/js/2.b6ce75c9.chunk.js.map": "/cv-application/static/js/2.b6ce75c9.chunk.js.map",
+    "index.html": "/cv-application/index.html",
+    "static/css/main.18075b12.chunk.css.map": "/cv-application/static/css/main.18075b12.chunk.css.map",
+    "static/js/2.b6ce75c9.chunk.js.LICENSE.txt": "/cv-application/static/js/2.b6ce75c9.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cv-application/static/media/Edit_icon_(the_Noun_Project_30184).398bf333.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41e43d0a.js",
+    "static/js/2.b6ce75c9.chunk.js",
+    "static/css/main.18075b12.chunk.css",
+    "static/js/main.fae39c01.chunk.js"
+  ]
+}
