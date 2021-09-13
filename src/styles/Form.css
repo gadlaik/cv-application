@@ -1,15 +1,18 @@
 #cv-form {
   width: 720px;
+  max-width: 90%;
   margin: auto;
-  margin-top: 10px;
   position: relative;
 }
 
 .cv-form-list {
   position: absolute;
   width: 720px;
+  max-width: 90%;
   top: 0;
   display: flex;
+  left: 5%;
+  right: 5%;
   flex-direction: column;
   gap: 15px;
   margin-top: 100px;
@@ -85,7 +88,7 @@ input {
 #submit-form,
 #next,
 #back {
-  padding: 6px 12px;
+  padding: 7px 12px 5px 12px;
   font-size: 18px;
   margin: 0px auto 0px auto;
   display: flex;
@@ -96,7 +99,7 @@ input {
   cursor: pointer;
   transition-duration: 400ms;
   font-weight: bold;
-  text-shadow: 1px 1px 1px gray;
+  text-shadow: -1px -1px 1px gray;
 }
 
 #nav-btns {
@@ -116,7 +119,7 @@ input {
 }
 #back {
   background-color: tomato;
-  text-shadow: 1px 1px 2px lightgray;
+  text-shadow: -1px -1px 2px lightgray;
 }
 
 textarea {
